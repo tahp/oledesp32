@@ -1,5 +1,11 @@
-*.bin
-*.elf
-*.hex
-.pio
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
 build/
+libdeps/
+.env
+# VS Code
+.vscode/
+# macOS
+.DS_Store

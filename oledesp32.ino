@@ -118,16 +118,9 @@ void drawTopBar() {
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
 
-  for (int i = 0; i < menuLength; i++) {
-    if (i == menuIndex) {
-      display.print("[");
-      display.print(menuItems[i]);
-      display.print("] ");
-    } else {
-      display.print(menuItems[i]);
-      display.print(" ");
-    }
-  }
+  display.print("[");
+  display.print(menuItems[menuIndex]);
+  display.print("]");
 }
 
 // ------------------------------------------------------------
